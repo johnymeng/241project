@@ -1,0 +1,36 @@
+
+State Machine - |PokemonGame|my_top_controller:u1|my_control:u0|current_state
+Name current_state.DRAW_BACKGROUND_BACK_WAIT1 current_state.EXIT_GAME_STATE_WAIT current_state.P2_WINSTATE current_state.DRAW_MESSAGE2 current_state.DRAW_MESSAGE current_state.DRAW_BACKGROUND_BACK2 current_state.DRAW_BACKGROUND_BACK1 current_state.CHECK_P2_WIN current_state.P2_MOVE_WAIT current_state.DRAW_P2_SPECIALMOVE current_state.DRAW_P2_BASICMOVE current_state.P2_SPECIALMOVE current_state.P2_BASICMOVE current_state.PLAYER2_MOVE current_state.P1_WINSTATE current_state.CHECK_P1_WIN current_state.P1_MOVE_WAIT current_state.DRAW_P1_SPECIALMOVE current_state.DRAW_P1_BASICMOVE current_state.P1_SPECIALMOVE current_state.P1_BASICMOVE current_state.PLAYER1_MOVE current_state.DRAW_POKE_2 current_state.DRAW_POKE_1 current_state.FIGHT_BACKGROUND_DRAW current_state.START_GAME_WAIT current_state.START_GAME current_state.PLAYER_2_WAIT current_state.LOAD_POKEMON_2 current_state.PLAYER_1_WAIT current_state.LOAD_POKEMON_1 current_state.DRAW_BACKGROUND current_state.DRAW_BACKGROUND_BACK_WAIT2 
+current_state.DRAW_BACKGROUND 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state.LOAD_POKEMON_1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
+current_state.PLAYER_1_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
+current_state.LOAD_POKEMON_2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 
+current_state.PLAYER_2_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
+current_state.START_GAME 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 
+current_state.START_GAME_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 
+current_state.FIGHT_BACKGROUND_DRAW 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 
+current_state.DRAW_POKE_1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 
+current_state.DRAW_POKE_2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 
+current_state.PLAYER1_MOVE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 
+current_state.P1_BASICMOVE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.P1_SPECIALMOVE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.DRAW_P1_BASICMOVE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.DRAW_P1_SPECIALMOVE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.P1_MOVE_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.CHECK_P1_WIN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.P1_WINSTATE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.PLAYER2_MOVE 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.P2_BASICMOVE 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.P2_SPECIALMOVE 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.DRAW_P2_BASICMOVE 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.DRAW_P2_SPECIALMOVE 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.P2_MOVE_WAIT 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.CHECK_P2_WIN 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.DRAW_BACKGROUND_BACK1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.DRAW_BACKGROUND_BACK2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.DRAW_MESSAGE 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.DRAW_MESSAGE2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.P2_WINSTATE 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.EXIT_GAME_STATE_WAIT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.DRAW_BACKGROUND_BACK_WAIT1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+current_state.DRAW_BACKGROUND_BACK_WAIT2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 

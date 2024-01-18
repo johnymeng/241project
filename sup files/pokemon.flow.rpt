@@ -1,0 +1,179 @@
+Flow report for pokemon
+Thu Nov 30 03:23:16 2023
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Thu Nov 30 03:23:06 2023           ;
+; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
+; Revision Name                   ; pokemon                                         ;
+; Top-level Entity Name           ; PokemonGame                                     ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSEMA5F31C6                                    ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 662 / 32,070 ( 2 % )                            ;
+; Total registers                 ; 511                                             ;
+; Total pins                      ; 68 / 457 ( 15 % )                               ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 2,764,800 / 4,065,280 ( 68 % )                  ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                                  ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 1 / 6 ( 17 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/30/2023 03:21:31 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; pokemon             ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                        ;
++-------------------------------------+------------------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                                                  ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+------------------------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 93181000663237.170133249108056                                         ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                     ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/char_bb.v                                                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/bulb_moves_bb.v                                                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/bulb_bb.v                                                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/battle_background_bb.v                                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/watergun_bb.v                                                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/tackle_bb.v                                                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/supereffective_bb.v                                                ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/squir_moves_bb.v                                                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/squir_bb.v                                                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/selectPokemon_bb.v                                                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/razorleaf_bb.v                                                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/player2wins_bb.v                                                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/player2_bb.v                                                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/player1wins_bb.v                                                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/player1select_bb.v                                                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/player_squir_bb.v                                                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/player_char_bb.v                                                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/player_bulb_bb.v                                                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/notveryeffective_bb.v                                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/miss_bb.v                                                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/gameStart_bb.v                                                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/ember_bb.v                                                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/directhit_bb.v                                                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/criticalhit_bb.v                                                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; RAM/char_moves_bb.v                                                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen.v                                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_0002.v                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/afi_mux_ddr3_ddrx.v                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_clock_pair_generator.v   ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_read_valid_selector.v    ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_addr_cmd_datapath.v      ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_reset.v                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_acv_ldc.v                ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_memphy.sv                ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_reset_sync.v             ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_new_io_pads.v            ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_fr_cycle_shifter.v       ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_fr_cycle_extender.v      ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_read_datapath.sv         ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_write_datapath.v         ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_core_shadow_registers.sv ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_simple_ddio_out.sv       ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_phy_csr.sv               ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_iss_probe.v              ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_addr_cmd_pads.v          ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_flop_mem.v               ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0.sv                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_p0_altdqdqs.v               ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/altdq_dqs2_acv_cyclonev.sv               ; --            ; --          ; --         ;
+; MISC_FILE                           ; start_screen_sim/start_screen/start_screen_pll0.sv                     ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                                 ; --            ; PokemonGame ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                                 ; --            ; PokemonGame ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                                 ; --            ; PokemonGame ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                    ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                  ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                           ; --            ; --          ; --         ;
+; SPD_FILE                            ; start_screen.spd                                                       ; --            ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; PokemonGame                                                            ; pokemon       ; --          ; --         ;
++-------------------------------------+------------------------------------------------------------------------+---------------+-------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4920 MB             ; 00:00:27                           ;
+; Fitter               ; 00:01:06     ; 1.2                     ; 6993 MB             ; 00:03:12                           ;
+; Assembler            ; 00:00:08     ; 1.0                     ; 4884 MB             ; 00:00:08                           ;
+; Timing Analyzer      ; 00:00:09     ; 2.2                     ; 5260 MB             ; 00:00:17                           ;
+; Total                ; 00:01:41     ; --                      ; --                  ; 00:04:04                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; BA3135WS40       ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; BA3135WS40       ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; BA3135WS40       ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; BA3135WS40       ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off pokemon -c pokemon
+quartus_fit --read_settings_files=off --write_settings_files=off pokemon -c pokemon
+quartus_asm --read_settings_files=off --write_settings_files=off pokemon -c pokemon
+quartus_sta pokemon -c pokemon
+
+
+

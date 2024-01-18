@@ -1,0 +1,10 @@
+
+
+C:/Users/Admin/Downloads/lab7part2.v2019.1/part2/vga_adapter/vga_pll.v
+
+Nov 13 10PM:59:48>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/Admin/Downloads/lab7part2.v2019.1/part2/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)

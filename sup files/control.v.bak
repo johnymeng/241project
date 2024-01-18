@@ -1,0 +1,3 @@
+module control(clock, resetn);
+
+endmodule

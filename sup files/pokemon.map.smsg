@@ -1,0 +1,3 @@
+Info (10281): Verilog HDL Declaration information at my_control.v(21): object "draw_poke_2" differs only in case from object "DRAW_POKE_2" in the same scope File: C:/Users/mengjohn/rip_all_nighter/my_control.v Line: 21
+Info (10281): Verilog HDL Declaration information at my_control.v(21): object "draw_message" differs only in case from object "DRAW_MESSAGE" in the same scope File: C:/Users/mengjohn/rip_all_nighter/my_control.v Line: 21
+Info (10281): Verilog HDL Declaration information at my_control.v(21): object "draw_message2" differs only in case from object "DRAW_MESSAGE2" in the same scope File: C:/Users/mengjohn/rip_all_nighter/my_control.v Line: 21
