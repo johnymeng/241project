@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "drawMenu",
+					"strict" : false
+				},
+				{
+					"name" : "drawSelectP1",
+					"strict" : false
+				},
+				{
+					"name" : "drawSelectP2",
+					"strict" : false
+				},
+				{
+					"name" : "drawP1MoveSel",
+					"strict" : false
+				},
+				{
+					"name" : "p2_bulbasaur",
+					"strict" : false
+				},
+				{
+					"name" : "p2_charmander",
+					"strict" : false
+				},
+				{
+					"name" : "p2_squirtle",
+					"strict" : false
+				},
+				{
+					"name" : "p1_bulbasaur",
+					"strict" : false
+				},
+				{
+					"name" : "p1_charmander",
+					"strict" : false
+				},
+				{
+					"name" : "p1_squirtle",
+					"strict" : false
+				},
+				{
+					"name" : "key[4]",
+					"strict" : false
+				},
+				{
+					"name" : "key[5]",
+					"strict" : false
+				},
+				{
+					"name" : "key[7]",
+					"strict" : false
+				},
+				{
+					"name" : "key[2]",
+					"strict" : false
+				},
+				{
+					"name" : "key[6]",
+					"strict" : false
+				},
+				{
+					"name" : "key[3]",
+					"strict" : false
+				},
+				{
+					"name" : "key[0]",
+					"strict" : false
+				},
+				{
+					"name" : "key[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "drawSelectP2_done",
+					"strict" : false
+				},
+				{
+					"name" : "menu_done",
+					"strict" : false
+				},
+				{
+					"name" : "drawP1MoveSel_done",
+					"strict" : false
+				},
+				{
+					"name" : "drawSelectP1_done",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
