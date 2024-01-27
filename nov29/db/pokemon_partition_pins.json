@@ -1,0 +1,193 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "x_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "x_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "x_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "x_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "x_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "x_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "x_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "x_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "y_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "y_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "y_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "y_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "y_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "y_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "y_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pokemon_p1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pokemon_p1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pokemon_p1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pokemon_p2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pokemon_p2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pokemon_p2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "draw_player_1_pokemon",
+					"strict" : false
+				},
+				{
+					"name" : "draw_player_2_pokemon",
+					"strict" : false
+				},
+				{
+					"name" : "battle_background",
+					"strict" : false
+				},
+				{
+					"name" : "load_poke_select_background",
+					"strict" : false
+				},
+				{
+					"name" : "player_1_select",
+					"strict" : false
+				},
+				{
+					"name" : "p1_bulbasaur",
+					"strict" : false
+				},
+				{
+					"name" : "p1_charmander",
+					"strict" : false
+				},
+				{
+					"name" : "p1_squirtle",
+					"strict" : false
+				},
+				{
+					"name" : "player_2_select",
+					"strict" : false
+				},
+				{
+					"name" : "p2_bulbasaur",
+					"strict" : false
+				},
+				{
+					"name" : "p2_charmander",
+					"strict" : false
+				},
+				{
+					"name" : "p2_squirtle",
+					"strict" : false
+				},
+				{
+					"name" : "p1_attacks",
+					"strict" : false
+				},
+				{
+					"name" : "p2_attacks",
+					"strict" : false
+				},
+				{
+					"name" : "draw_attack_message_p1",
+					"strict" : false
+				},
+				{
+					"name" : "draw_attack_message_p2",
+					"strict" : false
+				},
+				{
+					"name" : "p1_win",
+					"strict" : false
+				},
+				{
+					"name" : "p2_win",
+					"strict" : false
+				},
+				{
+					"name" : "draw_background_after",
+					"strict" : false
+				},
+				{
+					"name" : "animate_move_1",
+					"strict" : false
+				},
+				{
+					"name" : "draw_animation_special_p1",
+					"strict" : false
+				},
+				{
+					"name" : "draw_animation_special_p2",
+					"strict" : false
+				},
+				{
+					"name" : "resetn",
+					"strict" : false
+				},
+				{
+					"name" : "start_game",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

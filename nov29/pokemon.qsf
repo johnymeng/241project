@@ -1,0 +1,171 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+# Date created = 00:11:56  November 01, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		pokemon_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CGXFC7C7F23C8
+set_global_assignment -name TOP_LEVEL_ENTITY datapath
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:11:56  NOVEMBER 01, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name MIF_FILE RAM/WATERGUNN.mif
+set_global_assignment -name MIF_FILE RAM/TACKLE.mif
+set_global_assignment -name SOURCE_FILE RAM/README.md
+set_global_assignment -name MIF_FILE RAM/RAZORLEAFF.mif
+set_global_assignment -name MIF_FILE RAM/EMBERR.mif
+set_global_assignment -name SOURCE_FILE RAM/char.ver
+set_global_assignment -name VERILOG_FILE RAM/char.v
+set_global_assignment -name QIP_FILE RAM/char.qip
+set_global_assignment -name MIF_FILE RAM/char.mif
+set_global_assignment -name MIF_FILE RAM/bulbasaur.mif
+set_global_assignment -name MIF_FILE RAM/bulba_moves.mif
+set_global_assignment -name VERILOG_FILE RAM/bulb_moves.v
+set_global_assignment -name QIP_FILE RAM/bulb_moves.qip
+set_global_assignment -name MIF_FILE RAM/bulb_moves.mif
+set_global_assignment -name SOURCE_FILE RAM/bulb.ver
+set_global_assignment -name VERILOG_FILE RAM/bulb.v
+set_global_assignment -name QIP_FILE RAM/bulb.qip
+set_global_assignment -name MIF_FILE RAM/bulb.mif
+set_global_assignment -name SOURCE_FILE RAM/black.ver
+set_global_assignment -name MIF_FILE RAM/black.mif
+set_global_assignment -name VERILOG_FILE RAM/battle_background.v
+set_global_assignment -name QIP_FILE RAM/battle_background.qip
+set_global_assignment -name MIF_FILE RAM/battle_background.mif
+set_global_assignment -name COMMAND_MACRO_FILE RAM/wave.do
+set_global_assignment -name VERILOG_FILE RAM/watergun.v
+set_global_assignment -name QIP_FILE RAM/watergun.qip
+set_global_assignment -name VERILOG_FILE RAM/tackle.v
+set_global_assignment -name QIP_FILE RAM/tackle.qip
+set_global_assignment -name MIF_FILE RAM/supereffectivefinal.mif
+set_global_assignment -name MIF_FILE RAM/supereffectivee.mif
+set_global_assignment -name VERILOG_FILE RAM/supereffective.v
+set_global_assignment -name QIP_FILE RAM/supereffective.qip
+set_global_assignment -name MIF_FILE RAM/supereffective.mif
+set_global_assignment -name MIF_FILE RAM/squirtle_moves.mif
+set_global_assignment -name MIF_FILE RAM/squirtle.mif
+set_global_assignment -name MIF_FILE RAM/squirt_moves.mif
+set_global_assignment -name VERILOG_FILE RAM/squir_moves.v
+set_global_assignment -name QIP_FILE RAM/squir_moves.qip
+set_global_assignment -name SOURCE_FILE RAM/squir.ver
+set_global_assignment -name VERILOG_FILE RAM/squir.v
+set_global_assignment -name QIP_FILE RAM/squir.qip
+set_global_assignment -name MIF_FILE RAM/squir.mif
+set_global_assignment -name VERILOG_FILE RAM/selectPokemon.v
+set_global_assignment -name QIP_FILE RAM/selectPokemon.qip
+set_global_assignment -name VERILOG_FILE RAM/razorleaf.v
+set_global_assignment -name QIP_FILE RAM/razorleaf.qip
+set_global_assignment -name MIF_FILE "RAM/player-squir.mif"
+set_global_assignment -name MIF_FILE "RAM/player-char.mif"
+set_global_assignment -name MIF_FILE "RAM/player-bulb.mif"
+set_global_assignment -name VERILOG_FILE RAM/player2wins.v
+set_global_assignment -name QIP_FILE RAM/player2wins.qip
+set_global_assignment -name MIF_FILE RAM/player2wins.mif
+set_global_assignment -name SOURCE_FILE RAM/player2_2.ver
+set_global_assignment -name MIF_FILE RAM/player2_2.mif
+set_global_assignment -name VERILOG_FILE RAM/player2.v
+set_global_assignment -name QIP_FILE RAM/player2.qip
+set_global_assignment -name MIF_FILE RAM/player2.mif
+set_global_assignment -name VERILOG_FILE RAM/player1wins.v
+set_global_assignment -name QIP_FILE RAM/player1wins.qip
+set_global_assignment -name VERILOG_FILE RAM/player1select.v
+set_global_assignment -name QIP_FILE RAM/player1select.qip
+set_global_assignment -name MIF_FILE RAM/player1moves.mif
+set_global_assignment -name SOURCE_FILE RAM/player1.ver
+set_global_assignment -name MIF_FILE RAM/player1.mif
+set_global_assignment -name VERILOG_FILE RAM/player_squir.v
+set_global_assignment -name QIP_FILE RAM/player_squir.qip
+set_global_assignment -name VERILOG_FILE RAM/player_char.v
+set_global_assignment -name QIP_FILE RAM/player_char.qip
+set_global_assignment -name VERILOG_FILE RAM/player_bulb.v
+set_global_assignment -name QIP_FILE RAM/player_bulb.qip
+set_global_assignment -name MIF_FILE RAM/notveryeffectivefinal.mif
+set_global_assignment -name MIF_FILE RAM/notveryeffectiveee.mif
+set_global_assignment -name VERILOG_FILE RAM/notveryeffective.v
+set_global_assignment -name QIP_FILE RAM/notveryeffective.qip
+set_global_assignment -name MIF_FILE RAM/notveryeffective.mif
+set_global_assignment -name MIF_FILE RAM/misss.mif
+set_global_assignment -name MIF_FILE RAM/missfinal.mif
+set_global_assignment -name VERILOG_FILE RAM/miss.v
+set_global_assignment -name QIP_FILE RAM/miss.qip
+set_global_assignment -name MIF_FILE RAM/miss.mif
+set_global_assignment -name SOURCE_FILE RAM/low_poly_choose.ver
+set_global_assignment -name MIF_FILE RAM/low_poly_choose.mif
+set_global_assignment -name MIF_FILE RAM/goodbattlebackground.mif
+set_global_assignment -name VERILOG_FILE RAM/gameStart.v
+set_global_assignment -name QIP_FILE RAM/gameStart.qip
+set_global_assignment -name MIF_FILE RAM/gameStart.mif
+set_global_assignment -name VERILOG_FILE RAM/ember.v
+set_global_assignment -name QIP_FILE RAM/ember.qip
+set_global_assignment -name MIF_FILE RAM/directhitt.mif
+set_global_assignment -name MIF_FILE RAM/directhitfinal.mif
+set_global_assignment -name VERILOG_FILE RAM/directhit.v
+set_global_assignment -name QIP_FILE RAM/directhit.qip
+set_global_assignment -name MIF_FILE RAM/directhit.mif
+set_global_assignment -name MIF_FILE RAM/criticalhitfinal.mif
+set_global_assignment -name VERILOG_FILE RAM/criticalhit.v
+set_global_assignment -name QIP_FILE RAM/criticalhit.qip
+set_global_assignment -name MIF_FILE RAM/criticalhit.mif
+set_global_assignment -name MIF_FILE RAM/crithitt.mif
+set_global_assignment -name MIF_FILE RAM/charmander.mif
+set_global_assignment -name MIF_FILE RAM/charma_moves.mif
+set_global_assignment -name VERILOG_FILE RAM/char_moves.v
+set_global_assignment -name QIP_FILE RAM/char_moves.qip
+set_global_assignment -name MIF_FILE RAM/char_moves.mif
+set_global_assignment -name VERILOG_FILE vga_adapter/vga_pll.v
+set_global_assignment -name VERILOG_FILE vga_adapter/vga_controller.v
+set_global_assignment -name VERILOG_FILE vga_adapter/vga_address_translator.v
+set_global_assignment -name VERILOG_FILE vga_adapter/vga_adapter.v
+set_global_assignment -name QIP_FILE vga_adapter/vga_pll.qip
+set_global_assignment -name VERILOG_FILE screen_counter.v
+set_global_assignment -name VERILOG_FILE rate_divider.v
+set_global_assignment -name VERILOG_FILE hex_decoder.v
+set_global_assignment -name VERILOG_FILE title_screen.v
+set_global_assignment -name VERILOG_FILE control.v
+set_global_assignment -name VERILOG_FILE datapath.v
+set_global_assignment -name QIP_FILE start_screen.qip
+set_global_assignment -name SIP_FILE start_screen.sip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
