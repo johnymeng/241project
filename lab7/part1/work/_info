@@ -1,0 +1,110 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Admin/Downloads/ECE241/lab7/part1
+vhex
+Z1 !s110 1699928446
+!i10b 1
+!s100 DfAK]c]>hi[AVYV>o2>Bl0
+I`S=E=1m`b1A:DhYK609<K1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1699928438
+Z4 8part1_fpga.v
+Z5 Fpart1_fpga.v
+Z6 L0 36
+Z7 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z8 !s108 1699928446.000000
+Z9 !s107 part1_fpga.v|
+Z10 !s90 -reportprogress|300|part1_fpga.v|
+!i113 1
+Z11 tCvgOpt 0
+vhex_decoder
+Z12 !s110 1699930075
+!i10b 1
+!s100 UQ?[?SHJ?d=mnPD0SCC:82
+I^]dQ;ZjQi[ocbQzO^FNe83
+R2
+R0
+Z13 w1699928484
+R4
+R5
+L0 47
+R7
+r1
+!s85 0
+31
+Z14 !s108 1699930074.000000
+R9
+R10
+!i113 1
+R11
+vpart1
+R1
+!i10b 1
+!s100 ooZD2<4;GbVWDoEZ^HoKT2
+IlHFJCA<^8OfIWB38CA;dM0
+R2
+R0
+R3
+R4
+R5
+Z15 L0 95
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+vpart1_fpga
+!s110 1699930074
+!i10b 1
+!s100 _;XPQ=Em=gH]bBP9TAX?63
+I_Dzag[4<L2onA68e7@iBH1
+R2
+R0
+R13
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+R14
+R9
+R10
+!i113 1
+R11
+vram
+R12
+!i10b 1
+!s100 <n2IQf:ZV^2D<oV=L[z7z2
+IgR?PHkI0VUJHYVHPW6KKg3
+R2
+R0
+R13
+R4
+R5
+R15
+R7
+r1
+!s85 0
+31
+R14
+R9
+R10
+!i113 1
+R11

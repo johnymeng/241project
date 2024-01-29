@@ -1,0 +1,11 @@
+
+State Machine - |test|control:C0|current_state
+Name current_state.S_DONE current_state.S_Black current_state.S_Black_wait current_state.Drawing current_state.S_LOAD_y_wait current_state.S_LOAD_y current_state.S_LOAD_x_wait current_state.S_LOAD_x 
+current_state.S_LOAD_x 0 0 0 0 0 0 0 0 
+current_state.S_LOAD_x_wait 0 0 0 0 0 0 1 1 
+current_state.S_LOAD_y 0 0 0 0 0 1 0 1 
+current_state.S_LOAD_y_wait 0 0 0 0 1 0 0 1 
+current_state.Drawing 0 0 0 1 0 0 0 1 
+current_state.S_Black_wait 0 0 1 0 0 0 0 1 
+current_state.S_Black 0 1 0 0 0 0 0 1 
+current_state.S_DONE 1 0 0 0 0 0 0 1 

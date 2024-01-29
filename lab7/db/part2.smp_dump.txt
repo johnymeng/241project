@@ -1,0 +1,10 @@
+
+State Machine - |part2|control:u0|current_state
+Name current_state.S_DONE current_state.S_BLACK current_state.S_WAIT_BLACK current_state.S_DRAW current_state.S_WAIT_DRAW current_state.S_LOAD_X_Y_WAIT current_state.S_LOAD_X_Y 
+current_state.S_LOAD_X_Y 0 0 0 0 0 0 0 
+current_state.S_LOAD_X_Y_WAIT 0 0 0 0 0 1 1 
+current_state.S_WAIT_DRAW 0 0 0 0 1 0 1 
+current_state.S_DRAW 0 0 0 1 0 0 1 
+current_state.S_WAIT_BLACK 0 0 1 0 0 0 1 
+current_state.S_BLACK 0 1 0 0 0 0 1 
+current_state.S_DONE 1 0 0 0 0 0 1 

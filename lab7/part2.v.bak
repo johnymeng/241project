@@ -1,0 +1,189 @@
+//
+// This is the template for Part 2 of Lab 7.
+//
+// Paul Chow
+// November 2021
+//
+
+module part2(iResetn,iPlotBox,iBlack,iColour,iLoadX,iXY_Coord,iClock,oX,oY,oColour,oPlot,oDone);
+   parameter X_SCREEN_PIXELS = 8'd160;
+   parameter Y_SCREEN_PIXELS = 7'd120;
+
+   input wire iResetn, iPlotBox, iBlack, iLoadX;
+   input wire [2:0] iColour;
+   input wire [6:0] iXY_Coord;
+   input wire 	    iClock;
+   output wire [7:0] oX;         // VGA pixel coordinates
+   output wire [6:0] oY;
+
+   output wire [2:0] oColour;     // VGA pixel colour (0-7)
+   output wire 	     oPlot;       // Pixel draw enable
+   output wire       oDone;       // goes high when finished drawing frame
+
+   //
+   // Your code goes here
+   //
+
+   wire [3:0] counter;
+   wire [7:0] fs_x;
+   wire [6:0] fs_y;
+   wire counter_En, fs_counter_En, erase;
+
+   control #(.X_SCREEN_PIXELS(X_SCREEN_PIXELS), .Y_SCREEN_PIXELS(Y_SCREEN_PIXELS)) 
+      C(iClock, iResetn, iPlotBox, iBlack, counter, fs_x, fs_y, counter_En, erase, fs_counter_En, oPlot, oDone);
+   datapath #(.X_SCREEN_PIXELS(X_SCREEN_PIXELS), .Y_SCREEN_PIXELS(Y_SCREEN_PIXELS)) 
+      D(iClock, iResetn, iLoadX, iPlotBox, iXY_Coord, iColour, erase, counter_En, fs_counter_En, counter, fs_x, fs_y, oX, oY, oColour);
+
+endmodule // part2
+
+module datapath ( iClock, iResetn, iLoadX, iPlotBox, iXY_Coord, iColour, erase, counter_En, fs_counter_En, 
+                  counter, fs_x, fs_y, oX, oY, oColour);
+   parameter X_SCREEN_PIXELS = 8'd160;
+   parameter Y_SCREEN_PIXELS = 7'd120;
+
+   input iClock, iResetn, iLoadX, iPlotBox, erase, counter_En, fs_counter_En;
+   input [6:0] iXY_Coord;
+   input [2:0] iColour;
+
+   output reg [3:0] counter = 4'b0000;
+   output reg [7:0] fs_x;
+   output [7:0] oX;
+   output reg [6:0] fs_y;
+   output [6:0] oY;
+   output [2:0] oColour;
+
+   reg [7:0] X;
+   reg [6:0] Y;
+   reg [2:0] Colour;
+
+   always @(posedge iClock)
+   begin
+      if (iResetn == 0)
+      begin
+         X <= 0;
+         Y <= 0;
+         Colour <= 0;
+      end
+      else if (iLoadX)
+         X <= iXY_Coord;
+      else if (iPlotBox)
+      begin
+         Y <= iXY_Coord;
+         Colour <= iColour;
+      end
+   end
+
+   always @(posedge iClock)
+   begin
+      if (iResetn == 0)
+      begin
+         counter <= 4'b0000;
+         fs_x <= 0;
+         fs_y <= 0;
+      end
+      else 
+      begin
+         if (counter_En)
+         begin
+            if (counter == 4'b1111)
+               counter <= 4'b0000;
+            else
+               counter <= counter + 1;
+         end
+         if (fs_counter_En) 
+         begin
+            if (fs_x == X_SCREEN_PIXELS - 1)
+            begin
+               fs_x <= 0;
+               if (fs_y == Y_SCREEN_PIXELS - 1)
+                  fs_y <= 0;
+               else
+                  fs_y <= fs_y + 1;
+            end
+            else
+               fs_x <= fs_x + 1;
+         end
+      end
+   end
+
+   assign oX = erase ? fs_x : X + counter[1:0];
+   assign oY = erase ? fs_y : Y + counter[3:2];
+   assign oColour = erase ? 3'b000 : Colour;
+endmodule
+
+
+module control(iClock, iResetn, iPlotBox, iBlack, counter, fs_x, fs_y, counter_En, erase, fs_counter_En, oPlot, oDone);
+   parameter X_SCREEN_PIXELS = 8'd160;
+   parameter Y_SCREEN_PIXELS = 7'd120;
+   
+   input iClock, iResetn, iPlotBox, iBlack;
+   input [3:0] counter;
+   input [7:0] fs_x;
+   input [6:0] fs_y;
+   output reg counter_En, erase, fs_counter_En, oPlot, oDone;
+
+   reg [2:0] curr_state, next_state;
+
+   localparam START = 3'd0, WAIT_DRAW = 3'd1, DRAW = 3'd2, WAIT_ERASE = 3'd3, ERASE = 3'd4, DONE = 3'd5;
+
+   always @(*)
+   begin
+      case (curr_state)
+         START: 
+         begin
+            if (iPlotBox) 
+               next_state = WAIT_DRAW;
+            else if (iBlack)
+               next_state = WAIT_ERASE;
+            else
+               next_state = START;
+         end
+         WAIT_DRAW: next_state = iPlotBox ? WAIT_DRAW : DRAW;
+         DRAW: next_state = (counter == 4'b1111) ? DONE: DRAW;
+         WAIT_ERASE: next_state = iBlack ? WAIT_ERASE : ERASE;
+         ERASE: next_state = ((fs_x == (X_SCREEN_PIXELS - 1)) && (fs_y == (Y_SCREEN_PIXELS - 1))) ? DONE : ERASE;
+         DONE: 
+         begin
+            if (iPlotBox) 
+               next_state = WAIT_DRAW;
+            else if (iBlack)
+               next_state = WAIT_ERASE;
+            else
+               next_state = DONE;
+         end
+         default: next_state = START;
+      endcase
+   end
+
+   always @(*)
+   begin
+      counter_En = 1'b0;
+      erase = 1'b0;
+      fs_counter_En = 1'b0;
+      oPlot = 1'b0;
+      oDone = 1'b0;
+
+      case (curr_state)
+         DRAW:
+         begin
+            counter_En = 1'b1;
+            oPlot = 1'b1;
+         end
+         ERASE:
+         begin
+            erase = 1'b1;
+            fs_counter_En = 1'b1;
+            oPlot = 1'b1;
+         end
+         DONE: oDone = 1'b1;
+      endcase
+   end
+
+   always @(posedge iClock) 
+   begin
+      if (iResetn == 0) 
+         curr_state <= START;
+      else
+         curr_state <= next_state;
+   end
+endmodule

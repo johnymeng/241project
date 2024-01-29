@@ -1,0 +1,10 @@
+
+State Machine - |fill|part2_fpga:fpga|control:u0|CS
+Name CS.C_Black CS.C_dWait CS.C_Memory CS.C_WaitYC CS.C_LoadYC CS.C_WaitX CS.C_LoadX 
+CS.C_LoadX 0 0 0 0 0 0 0 
+CS.C_WaitX 0 0 0 0 0 1 1 
+CS.C_LoadYC 0 0 0 0 1 0 1 
+CS.C_WaitYC 0 0 0 1 0 0 1 
+CS.C_Memory 0 0 1 0 0 0 1 
+CS.C_dWait 0 1 0 0 0 0 1 
+CS.C_Black 1 0 0 0 0 0 1 
